@@ -1,12 +1,54 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/find/index",
+    "pages/mall/index",
+    "pages/my/index",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "读书人",
     "navigationBarTextStyle":"black"
-  }
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#fff",
+    "borderStyle": "black",
+    "backgroundColor": "#12BCF8",
+    "list": [
+      {
+        "selectedIconPath": "/resources/tabbar/home.png",
+        "iconPath": "/resources/tabbar/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/resources/tabbar/find.png",
+        "iconPath": "/resources/tabbar/find.png",
+        "pagePath": "pages/find/index",
+        "text": "发现"
+      },
+      {
+        "selectedIconPath": "/resources/tabbar/shop.png",
+        "iconPath": "/resources/tabbar/shop.png",
+        "pagePath": "pages/mall/index",
+        "text": "积分商城"
+      },
+      {
+        "selectedIconPath": "/resources/tabbar/my.png",
+        "iconPath": "/resources/tabbar/my.png",
+        "pagePath": "pages/my/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
 }
