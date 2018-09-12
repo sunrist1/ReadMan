@@ -6,6 +6,11 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
+    //显示红点
+    wx.showTabBarRedDot({
+      index: 1,
+    }) 
+    
     // 登录
     wx.login({
       success: res => {

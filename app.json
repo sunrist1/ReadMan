@@ -1,16 +1,22 @@
 {
-  "pages":[
+  "pages": [
+    "pages/mall/index",
+    "pages/mall/search",
+    "pages/recharge/index",
+    "pages/recharge/result",
+    "pages/goods/index",
+    "pages/goods/detail",
+    "pages/shopcart/index",
     "pages/index/index",
     "pages/find/index",
-    "pages/mall/index",
     "pages/my/index",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "读书人",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#fff",
