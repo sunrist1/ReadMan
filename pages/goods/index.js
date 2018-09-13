@@ -68,8 +68,8 @@ Page({
       })
       that.checkCor();
     }
-    //获取蛋糕列表
-    that.getcakelist();
+    //获取到商品列表
+    that.initGoods();
   },
   //获取到商品列表的值
   initGoods: function() {

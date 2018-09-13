@@ -7,7 +7,7 @@
 
 <!--商品简介-->
 <view class='goodsinfov'>
- {{goodsbrief}}
+  {{goodsbrief}}
 </view>
 
 <!--便签行-->
@@ -44,7 +44,7 @@
     <view class='bottomtxt' style='margin-top:-32rpx;'>咨询</view>
   </button>
 
-  <!---->
+  <!--购买和购买-->
   <view class='addcart' bindtap='addcartopt'>加入购物车</view>
   <view class='buyopt' bindtap='buyopt'>立即购买</view>
 </view>

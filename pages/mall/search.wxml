@@ -16,7 +16,7 @@
 <view class='goodsv'>
 
   <block wx:for="{{goodslist}}" wx:key="item">
-    <view class='goodsitem' bindtap='addcartopt' data-id='{{item.id}}'>
+    <view class='goodsitem' bindtap='gogoodsopt' data-id='{{item.id}}'>
       <view class='goodsimgv'>
         <image src='{{item.imgpath}}' class='goodsimg'></image>
         <view class='goodsnamev'>{{item.name}}</view>

@@ -249,11 +249,8 @@ Page({
   },
   //去兑换
   chargeopt:function(){
-    wx.showToast({
-      title: '兑换成功',
-      mask:true,
-      icon:'none',
-      duration:2000
+    wx.navigateTo({
+      url: '../payfor/index',
     })
   },
   /**

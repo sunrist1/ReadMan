@@ -97,6 +97,14 @@ Page({
       url: '../mall/index',
     })
   },
+  //点击商品，进入详情页面
+  gogoodsopt:function(e){
+    var that=this;
+
+    wx.navigateTo({
+      url: '../goods/detail?id='+e.currentTarget.dataset.id
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

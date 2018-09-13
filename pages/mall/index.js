@@ -10,7 +10,7 @@ Page({
     chktabid:0,//选中的菜单的值
     goodslist:[],//商品列表
     chkgoods:"",//选中的商品  
-    chkgoodsnum:0,//选中商品的个数  
+    chkgoodsnum:2,//选中商品的个数  
   },
 
   /**
@@ -127,6 +127,12 @@ Page({
     //跳转到详情页面
     wx.navigateTo({
       url: '../goods/detail?id=' + e.currentTarget.dataset.id,
+    })
+  },
+  //点击到购物车页面
+  gocartopt:function(){
+    wx.navigateTo({
+      url: '../shopcart/index',
     })
   },
   /**

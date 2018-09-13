@@ -1,5 +1,19 @@
 {
   "pages": [
+    "pages/my/index",
+    "pages/userinfo/index",
+    "pages/zhengshu/index",
+    "pages/title/index",
+    "pages/jifen/index",
+    "pages/order/index",
+    "pages/order/detail",
+    "pages/activity/index",
+    "pages/ticket/index",
+    "pages/teacher/index",
+    "pages/record/index",
+    "pages/payfor/index",
+    "pages/address/index",
+    "pages/address/edit",
     "pages/mall/index",
     "pages/mall/search",
     "pages/recharge/index",
@@ -9,7 +23,6 @@
     "pages/shopcart/index",
     "pages/index/index",
     "pages/find/index",
-    "pages/my/index",
     "pages/logs/logs"
   ],
   "window": {

@@ -52,7 +52,7 @@
 
 
 <!--购物车-->
-<view class='shopcartv'>
+<view class='shopcartv' bindtap='gocartopt'>
  <image src='/resources/mall/shopcart.png' class='shopcart'></image>
  <view class='shopcartnum' wx:if="{{chkgoodsnum>0}}">{{chkgoodsnum}}</view>
 </view>

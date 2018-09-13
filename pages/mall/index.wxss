@@ -172,7 +172,7 @@ page {
 
 .shopcartnum {
   position: relative;
-  top: -160rpx;
+  top: -150rpx;
   left: 100rpx;
   width: 40rpx;
   height: 40rpx;
