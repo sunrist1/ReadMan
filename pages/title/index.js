@@ -5,16 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    winheight:0,//高度
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that=this;
 
+    //获取高度
+    that.getWinHeight();
   },
+  //获取高度
+  getWinHeight:function(){
+    var that=this;
 
+    wx.getSystemInfo({
+      success: function(res) {
+        that.setData({
+          winheight:res.screenHeight*0.88
+        })
+      },
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

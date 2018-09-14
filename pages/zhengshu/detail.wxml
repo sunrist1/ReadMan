@@ -1,0 +1,17 @@
+<!--pages/zhengshu/detail.wxml-->
+
+<view class='bodyv'>
+  <image src='/resources/certificate/topimg.png' mode='widthFix' class='topimg'></image>
+
+  <view class='titletxt'>《课程名称XX》结业证书</view>
+  <view class='username'>王嘉尔同学：</view>
+  <view class='titleinfo'>
+    <text decode='true'>    
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恭喜你在补习机构名称完成了《课程名称XXX》的学习计划，特颁发此证。
+    </text>
+  </view>
+  <view class='zhengtuv'>
+    <image src='/resources/certificate/zhang.jpg' class='zhengshutu'></image>
+    <view class='groupname'>补习机构名称</view>
+  </view>
+</view>

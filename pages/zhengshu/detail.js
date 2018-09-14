@@ -1,11 +1,10 @@
-// pages/userinfo/index.js
+// pages/zhengshu/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    chktab:0,//tab选中
 
   },
 
@@ -15,26 +14,7 @@ Page({
   onLoad: function (options) {
 
   },
-  //菜单的切换
-  chktabopt:function(e){
-    var that=this;
-    //参数部分
-    var id=e.currentTarget.dataset.id;
-    that.setData({
-      chktab:parseInt(id)
-    })
-  },
-  //编辑操作
-  goedit:function(e){
-    //参数部分
-    var id=e.currentTarget.dataset.id;
-    var params = e.currentTarget.dataset.params;
-    var chktab = this.data.chktab;
 
-    wx.navigateTo({
-      url: '../userinfo/edit?id=' + id + "&params=" + params + "&chktab=" + chktab
-    })
-  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

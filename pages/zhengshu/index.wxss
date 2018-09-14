@@ -1,1 +1,182 @@
 /* pages/zhengshu/index.wxss */
+
+.titlev {
+  width: 100%;
+  height: 93rpx;
+  background: #12bcf8;
+  box-shadow: 9rpx 0px 16rpx #54b3f0;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 93rpx;
+}
+
+.backimg {
+  position: fixed;
+  z-index: -1;
+  width: 233%;
+  height: 4396rpx;
+  margin-left: -68%;
+  margin-top: -600rpx;
+}
+
+.contenv {
+  width: 100%;
+  height: 4396rpx;
+}
+
+.boxiconh {
+  width: 186rpx;
+  height: 174rpx;
+}
+
+.boxicon {
+  width: 186rpx;
+  height: 159rpx;
+}
+
+.box1 {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.box2 {
+  position: absolute;
+  top: 16%;
+  right: 10%;
+}
+
+.box3 {
+  position: absolute;
+  left: 42%;
+  top: 30%;
+}
+
+.box4 {
+  position: absolute;
+  left: 13%;
+  top: 43%;
+}
+
+.box5 {
+  position: absolute;
+  right: 13%;
+  top: 48%;
+}
+
+.box6 {
+  position: absolute;
+  right: 33%;
+  top: 62%;
+}
+
+.box7 {
+  position: absolute;
+  left: 13%;
+  top: 74%;
+}
+
+.box8 {
+  position: absolute;
+  right: 15%;
+  top: 84%;
+}
+
+.box9 {
+  position: absolute;
+  left: 33%;
+  top: 100%;
+}
+
+.box10 {
+  position: absolute;
+  left: 13%;
+  top: 118%;
+}
+
+.box11 {
+  position: absolute;
+  top: 125%;
+  right: 13%;
+}
+
+.box12 {
+  position: absolute;
+  top: 142%;
+  left: 42%;
+}
+
+.box13 {
+  position: absolute;
+  left: 13%;
+  top: 158%;
+}
+
+.box14 {
+  position: absolute;
+  right: 13%;
+  top: 173%;
+}
+
+.box15 {
+  position: absolute;
+  left: 33%;
+  top: 184%;
+}
+
+.box16 {
+  position: absolute;
+  left: 13%;
+  top: 200%;
+}
+
+.box17 {
+  position: absolute;
+  right: 13%;
+  top: 214%;
+}
+
+.box18 {
+  position: absolute;
+  left: 33%;
+  top: 227%;
+}
+
+.box19 {
+  position: absolute;
+  left: 13%;
+  top: 245%;
+}
+
+.box20 {
+  position: absolute;
+  right: 13%;
+  top: 257%;
+}
+
+.box21 {
+  position: absolute;
+  left: 33%;
+  top: 270%;
+}
+.box22 {
+  position: absolute;
+  left: 13%;
+  top: 284%;
+}
+.box23 {
+  position: absolute;
+  right: 13%;
+  top: 290%;
+}
+.box24 {
+  position: absolute;
+  left: 33%;
+  top: 303%;
+}
+.box25 {
+  position: absolute;
+  left: 13%;
+  top: 320%;
+}
