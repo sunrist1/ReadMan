@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    username:"",
+    teachernum:""
   },
 
   /**
@@ -14,7 +15,42 @@ Page({
   onLoad: function (options) {
 
   },
+  //得到姓名
+  getname:function(e){
+    var that=this;
 
+    that.setData({
+      username:e.detail.value
+    })
+  },
+  //得到证书号
+  getnum: function (e) {
+    var that = this;
+
+    that.setData({
+      teachernum: e.detail.value
+    })
+  },
+  //点击查询
+  searchopt:function(){
+    var that=this;
+    
+    var username = that.data.username,
+      teachernum = that.data.teachernum;
+
+    if (username == "" && teachernum==""){
+      wx.showToast({
+        title: '请至少输入一项',
+        duration:2000,
+        icon:'none',
+        mask:true
+      })
+    }  else{
+      wx.navigateTo({
+        url: '../teacher/result?name=' + username + "&numval=" + teachernum,
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

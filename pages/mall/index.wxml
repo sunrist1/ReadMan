@@ -48,11 +48,13 @@
 
   <view class='chkmore' bindtap='gomoreopt'>查看更多</view>
 </view>
-
-
+<view style='width:100%;height:20rpx;'></view>
+<!--底部的菜单部分-->
+<tabbar receiveData="2" />
 
 <!--购物车-->
 <view class='shopcartv' bindtap='gocartopt'>
  <image src='/resources/mall/shopcart.png' class='shopcart'></image>
  <view class='shopcartnum' wx:if="{{chkgoodsnum>0}}">{{chkgoodsnum}}</view>
 </view>
+
