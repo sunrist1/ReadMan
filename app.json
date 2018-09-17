@@ -1,10 +1,14 @@
 {
   "pages": [
-<<<<<<< HEAD
+    "pages/graduatefail/graduatefail",
+    "pages/graduatesuccess/graduatesuccess",
+    "pages/testgraduatetext/testgraduatetext",
+    "pages/testgraduate/testgraduate",
+    "pages/testlist9/testlist9",
+    "pages/graduatetest/graduatetest",
     "pages/testresult9/testresult9",
     "pages/testresult6/testresult6",
     "pages/testresult7/testresult7",
-    "pages/testlist9/testlist9",
     "pages/testlist8/testlist8",
     "pages/testindex9/testindex9",
     "pages/testindex8/testindex8",
@@ -36,18 +40,6 @@
     "pages/consummateinfo/consummateinfo",
     "pages/remindpwd/remindpwd",
     "pages/register/register",
-=======
-    "pages/test/index",
-    "pages/index/index",
-    "pages/find/index",
-    "pages/mall/search",
-    "pages/my/index",
-    "pages/mall/index",
-    "pages/find/detail",
-    "pages/find/book",
-    "pages/find/result",
-    "pages/ticket/index",
->>>>>>> 7556004125a24d7fd20524b7838f07dd361e3251
     "pages/order/index",
     "pages/order/detail",
     "pages/tuikuan/index",
@@ -73,10 +65,6 @@
     "pages/goods/index",
     "pages/goods/detail",
     "pages/shopcart/index",
-<<<<<<< HEAD
-    "pages/find/index",
-=======
->>>>>>> 7556004125a24d7fd20524b7838f07dd361e3251
     "pages/logs/logs"
   ],
   "subPackages": [
