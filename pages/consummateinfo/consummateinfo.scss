@@ -1,0 +1,123 @@
+.container{
+  .tabbar{
+    display: flex;
+    justify-content: center;
+    margin-top: 70rpx;
+    .item{
+      padding-bottom: 10rpx;
+      &:nth-of-type(1){
+        margin-right: 116rpx;
+      }
+      image{
+        width: 38rpx;
+        margin-right: 10rpx;
+        vertical-align: middle;
+      }
+      text{
+        font-size: 30rpx;
+        vertical-align: middle;
+        color: #ccc;
+      }
+    }
+    .active{
+      text{
+        color: #0A7EC8;
+      }
+      border-bottom: 3rpx solid #0A7EC8;
+    }
+  }
+
+  .info_box{
+    width: 100%;
+    padding: 22rpx;
+    box-sizing: border-box;
+    margin-top: 90rpx;
+    .item{
+      padding-bottom: 40rpx;
+      border-bottom: 1rpx solid #e5e5e5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 36rpx;
+      .left{
+        justify-content: space-between;
+        align-items: center;
+        display: inline-flex;
+        image{
+          width: 40rpx;
+          margin-right: 18rpx;
+        }
+        text{
+          color: #999;
+          font-size: 32rpx;
+          display: inline-block;
+          width: 128rpx;
+          text-align: justify;
+          text-justify:distribute-all-lines; 
+          text-align-last:justify;
+        }
+        &::after{
+          content:":";
+          color:#999;
+        }
+      }
+      .right{
+        input{
+          font-size: 32rpx;
+          text-align: right;
+          color: #999;
+        }
+        .radio-group{
+          .radio{
+            &:nth-of-type(1){
+              margin-right: 92rpx;
+            }
+            image{
+              width: 48rpx;
+              vertical-align: middle;
+              margin-right: 22rpx;
+            }
+            radio{
+              opacity: 0;
+              width: 0rpx;
+            }
+            text{
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+        }
+        picker{
+          color: #333;
+          font-size: 30rpx;
+        }
+      }
+      .right_arrow{
+        display: inline-block;
+        position: relative;
+        &::after{
+          content:"";
+          display: inline-block;
+          position: absolute;
+          width: 16rpx;
+          height: 29rpx;
+          background: url('../../resources/userinfo/back.png') 0 0 no-repeat;
+          background-size: contain;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .next_step_btn{
+    background-color: #12BCF8;
+    margin-top: 160rpx;
+    width: 664rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    color: #fff;
+    border-radius: 44rpx;
+  }
+}

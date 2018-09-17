@@ -1,0 +1,108 @@
+page{
+  height: 100%;
+}
+
+.container{
+  background-color: #E4EDF7;
+  height: 100%;
+  display: block;
+  .top_img{
+    width: 100%;
+  }
+
+  .class_list{
+    .item{
+      width: 712rpx;
+      height: 142rpx;
+      line-height: 142rpx;
+      text-align: center;
+      margin:8rpx auto;
+      border-radius: 10rpx;
+      background-color: #fff;
+      font-size: 32rpx;
+      position: relative;
+      overflow: hidden;
+
+      &:nth-of-type(1){
+        &::before{
+          content:"";
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -54rpx;
+          height: 108rpx;
+          width: 108rpx;
+          border-radius: 50%;
+          background-color: #12BCF8;
+        }
+        &::after{
+          content:"";
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -54rpx;
+          height: 108rpx;
+          width: 108rpx;
+          border-radius: 50%;
+          background-color: #12BCF8;
+        }
+      }
+
+      &:nth-of-type(2){
+        &::before{
+          content:"";
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -54rpx;
+          height: 108rpx;
+          width: 108rpx;
+          border-radius: 50%;
+          background-color: #B3D465;
+        }
+        &::after{
+          content:"";
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -54rpx;
+          height: 108rpx;
+          width: 108rpx;
+          border-radius: 50%;
+          background-color: #B3D465;
+        }
+      }
+
+      &:nth-of-type(3){
+        &::before{
+          content:"";
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -54rpx;
+          height: 108rpx;
+          width: 108rpx;
+          border-radius: 50%;
+          background-color: #F19EC2;
+        }
+        &::after{
+          content:"";
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -54rpx;
+          height: 108rpx;
+          width: 108rpx;
+          border-radius: 50%;
+          background-color: #F19EC2;
+        }
+      }
+    }
+  }
+}

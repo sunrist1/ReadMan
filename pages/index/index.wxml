@@ -1,13 +1,157 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+
+  <!-- 轮播图 -->
+  <swiper class="swiper-box" indicator-dots="{{true}}"
+    indicator-active-color="{{dots_color}}"
+  autoplay="{{true}}" interval="{{5000}}" duration="{{2000}}">
+    <swiper-item>
+      <image src="../../resources/index/banner.png" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../resources/index/banner.png" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../resources/index/banner.png" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </swiper>
+  
+
+  <!-- 课程列表 -->
+  <view class="class_list">
+    <view class='item'>
+      <image src="../../resources/index/class_1.png" mode="widthFix" binderror="" bindload=""></image>
+      <text>课程介绍</text>
+    </view>
+    <view class='item' catchtap='goto_classtest'>
+      <image src="../../resources/index/class_2.png" mode="widthFix" binderror="" bindload=""></image>
+      <text>课程测试</text>
+    </view>
+    <view class='item'>
+      <image src="../../resources/index/class_3.png" mode="widthFix" binderror="" bindload=""></image>
+      <text>结业考试</text>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+
+  <!-- 动态列表 -->
+  <view class="dynamic_list">
+    <text class="title">最新动态</text>
+    <view class='item' catchtap='goto_dynamicdetail'>
+      <view class="left">
+        <image src="../../resources/index/aa.jpg" mode="widthFix" binderror="" bindload=""></image>
+      </view>
+      <view class="right">
+        <view class="top">活动标题，最多显示两行，溢出隐藏（结尾用省略号）啊…哈哈哈…</view>
+        <view class="bottom">
+          <text class="left_time">剩余2小时</text>
+          <view class="views_count">
+            <image src="../../resources/index/eye.png" mode="widthFix" binderror="" bindload=""></image> 
+            <text>2362888</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='item' catchtap='goto_dynamicdetail'>
+      <view class="left">
+        <image src="../../resources/index/aa.jpg" mode="widthFix" binderror="" bindload=""></image>
+      </view>
+      <view class="right">
+        <view class="top">活动标题，最多显示两行，溢出隐藏（结尾用省略号）啊…哈哈哈…</view>
+        <view class="bottom">
+          <text class="left_time">剩余2小时</text>
+          <view class="views_count">
+            <image src="../../resources/index/eye.png" mode="widthFix" binderror="" bindload=""></image> 
+            <text>2362888</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='item' catchtap='goto_dynamicdetail'>
+      <view class="left">
+        <image src="../../resources/index/aa.jpg" mode="widthFix" binderror="" bindload=""></image>
+      </view>
+      <view class="right">
+        <view class="top">活动标题，最多显示两行，溢出隐藏（结尾用省略号）啊…哈哈哈…</view>
+        <view class="bottom">
+          <text class="left_time">剩余2小时</text>
+          <view class="views_count">
+            <image src="../../resources/index/eye.png" mode="widthFix" binderror="" bindload=""></image> 
+            <text>2362888</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+  <!-- 客服 -->
+  <image bindtap='showService' class="service_btn" src="../../resources/index/kefu.png" mode="widthFix" binderror="" bindload=""></image>
+
+  <!-- 签到 -->
+  <view class="qiandao mask" wx:if="{{show_qiandao}}">
+    <view wx:if="{{show_qiandao_cotent}}" class="content">
+      <image src="../../resources/index/qiandao_bg.png" class="bg_img" mode="widthFix" binderror="" bindload=""></image>
+      <view class="step_list">
+        <view class="item">
+          <image src="../../resources/index/flag_active.png" mode="widthFix" binderror="" bindload=""></image>
+          <text>周一</text>
+        </view>
+        <view class="item left_line right_line">
+          <image src="../../resources/index/flag_active.png" mode="widthFix" binderror="" bindload=""></image>
+          <text>周二</text>
+        </view>
+        <view class="item vertical_line">
+          <image src="../../resources/index/flag_gray.png" mode="widthFix" binderror="" bindload=""></image>
+          <text>周三</text>
+        </view>
+        <view class="item vertical_line">
+          <image src="../../resources/index/flag_gray.png" mode="widthFix" binderror="" bindload=""></image>
+          <text>周六</text>
+        </view>
+        <view class="item left_line right_line">
+          <image src="../../resources/index/flag_gray.png" mode="widthFix" binderror="" bindload=""></image>
+          <text>周五</text>
+        </view>
+        <view class="item">
+          <image src="../../resources/index/flag_gray.png" mode="widthFix" binderror="" bindload=""></image>
+          <text>周四</text>
+        </view>
+        <view class="item left_line">
+          <image src="../../resources/index/flag_gray.png" mode="widthFix" binderror="" bindload=""></image>
+          <text>周日</text>
+        </view>
+      </view>
+      <view class="jifen_btn">
+        签到获取积分
+      </view>
+
+      <image catchtap='closeQiandao' src="../../resources/index/close.png" class='close_btn' mode="widthFix" binderror="" bindload=""></image>
+    </view>
+
+    <view wx:if="{{show_qiaodao_jifen}}" class="show_qiaodao_jifen">
+      <image class="tiger" src="../../resources/index/tiger.png" mode="widthFix" binderror="" bindload=""></image>
+
+      <view class="tuoyuan_box"></view>
+      <text class="title">获得500积分</text>
+      <text class="contact">成为机构的新用户获得500积分 可在商城兑换物品</text>
+
+      <view class="check_btn">确定</view>
+    </view>
+  </view>
+
+  <!-- 签到 -->
+  <view class="service_boxs mask" wx:if="{{show_service}}">
+    <view class="show_qiaodao_jifen">
+      <image class="tiger" src="../../resources/index/service_img.png" mode="widthFix" binderror="" bindload=""></image>
+
+      <view class="tuoyuan_box"></view>
+      <text class="title">客户服务</text>
+      <text class="contact">服务时间：08:00-17:00</text>
+
+      <view catchtap='call_service' class="check_btn">拨打：020-928272</view>
+    </view>
   </view>
 </view>

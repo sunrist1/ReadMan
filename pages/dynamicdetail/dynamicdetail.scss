@@ -1,0 +1,42 @@
+.container{
+  width: 700rpx;
+  margin: 32rpx auto;
+  .top_bar{
+    border-bottom: 1rpx solid #dcdcdc;
+    padding-bottom: 24rpx;
+    .title{
+      font-size: 30rpx;
+      margin-bottom: 40rpx;
+    }
+    .bottom{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .right{
+        font-size: 24rpx;
+        color: #999;
+      }
+      .left{
+        image{
+          width: 26rpx;
+          margin-right: 16rpx;
+        }
+        text{
+          vertical-align: middle;
+          font-size: 24rpx;
+          color: #999;
+        }
+      }
+    }
+  }
+
+  .content{
+    text{
+      font-size: 28rpx;
+      color: #333;
+    }
+    image{
+      width: 100%;
+    }
+  }
+}

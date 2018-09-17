@@ -1,0 +1,137 @@
+<view class="container">
+  <image class="top_img" src="../../resources/classtest/classtest_img.png" mode="widthFix" binderror="" bindload=""></image>
+
+  <!-- <view class='list'>
+    <swiper vertical="{{true}}" indicator-dots="{{false}}" autoplay="{{false}}" previous-margin="{{'140rpx'}}" bindchange="swiperChange">
+      <swiper-item>
+        <view class="item">
+          <view class="slide-image">
+            <image src="../../resources/classtest/tiger_1.png" mode="aspectFit" class=""/>
+          </view>
+          <view class="right">
+            <text class="title">成为说服他人的专家</text>
+            <text class="context">测一测，你已经成为一名“具有说服 力的专家”了吗？</text>
+          </view>
+          <image class='right_icon' src="../../resources/classtest/right.png" mode="widthFix" binderror="" bindload=""></image>
+        </view>
+      </swiper-item>
+
+      <swiper-item>
+       <view class="item">
+          <view class="slide-image">
+            <image src="../../resources/classtest/tiger_1.png" mode="aspectFit" class=""/>
+          </view>
+          <view class="right">
+            <text class="title">成为说服他人的专家</text>
+            <text class="context">测一测，你已经成为一名“具有说服 力的专家”了吗？</text>
+          </view>
+          <image class='right_icon' src="../../resources/classtest/right.png" mode="widthFix" binderror="" bindload=""></image>
+        </view>
+      </swiper-item>
+
+      <swiper-item>
+       <view class="item">
+          <view class="slide-image">
+            <image src="../../resources/classtest/tiger_2.png" mode="aspectFit" class=""/>
+          </view>
+          <view class="right">
+            <text class="title">成为运算高手</text>
+            <text class="context">测一测，你已经成为一名“运算高手” 了吗？</text>
+          </view>
+          <image class='right_icon' src="../../resources/classtest/right.png" mode="widthFix" binderror="" bindload=""></image>
+        </view>
+      </swiper-item>
+
+      <swiper-item>
+       <view class="item">
+          <view class="slide-image">
+            <image src="../../resources/classtest/tiger_3.png" mode="aspectFit" class=""/>
+          </view>
+          <view class="right">
+            <text class="title">学会与异性正确交往</text>
+            <text class="context">测一测，你已经学会如何正确的与异 性交往了吗？</text>
+          </view>
+          <image class='right_icon' src="../../resources/classtest/right.png" mode="widthFix" binderror="" bindload=""></image>          
+        </view>
+      </swiper-item>
+
+      <swiper-item>
+       <view class="item">
+          <view class="slide-image">
+            <image src="../../resources/classtest/tiger_3.png" mode="aspectFit" class=""/>
+          </view>
+          <view class="right">
+            <text class="title">学会与异性正确交往</text>
+            <text class="context">测一测，你已经学会如何正确的与异 性交往了吗？</text>
+          </view>
+          <image class='right_icon' src="../../resources/classtest/right.png" mode="widthFix" binderror="" bindload=""></image>
+        </view>
+      </swiper-item>
+      
+    </swiper>
+  </view> -->
+
+  <!-- <view style="white-space: nowrap;" class="box" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend"> -->
+  <view style="white-space: nowrap;" class="box" bindtouchstart="" bindtouchmove="" bindtouchend="">
+    <view class="club" animation="{{animation1}}" bindtap="scrollLeft">
+      <view class="item">
+        <view class="slide-image">
+          <image src="../../resources/classtest/tiger_1.png" mode="aspectFit" class=""/>
+        </view>
+        <view class="right">
+          <text class="title">成为说服他人的专家</text>
+          <text class="context">测一测，你已经成为一名“具有说服 力的专家”了吗？</text>
+        </view>
+        <image class='right_icon' src="../../resources/classtest/right.png" mode="widthFix" binderror="" bindload=""></image>
+      </view>
+    </view>
+    <view class="club" animation="{{animation2}}" bindtap="scrollLeft">
+      <view class="item">
+        <view class="slide-image">
+          <image src="../../resources/classtest/tiger_1.png" mode="aspectFit" class=""/>
+        </view>
+        <view class="right">
+          <text class="title">成为说服他人的专家</text>
+          <text class="context">测一测，你已经成为一名“具有说服 力的专家”了吗？</text>
+        </view>
+        <image class='right_icon' src="../../resources/classtest/right.png" mode="widthFix" binderror="" bindload=""></image>
+      </view>
+    </view>
+    <view class="club" animation="{{animation3}}">
+      <view class="item">
+        <view class="slide-image">
+          <image src="../../resources/classtest/tiger_2.png" mode="aspectFit" class=""/>
+        </view>
+        <view class="right">
+          <text class="title">成为运算高手</text>
+          <text class="context">测一测，你已经成为一名“具有说服 力的专家”了吗？</text>
+        </view>
+        <image class='right_icon' src="../../resources/classtest/right.png" mode="widthFix" binderror="" bindload=""></image>
+      </view>
+    </view>
+    <view class="club" animation="{{animation4}}" bindtap="scrollRight">
+      <view class="item">
+        <view class="slide-image">
+          <image src="../../resources/classtest/tiger_3.png" mode="aspectFit" class=""/>
+        </view>
+        <view class="right">
+          <text class="title">学会与异性正确交往</text>
+          <text class="context">测一测，你已经成为一名“具有说服 力的专家”了吗？</text>
+        </view>
+        <image class='right_icon' src="../../resources/classtest/right.png" mode="widthFix" binderror="" bindload=""></image>
+      </view>
+    </view>
+    <view class="club" animation="{{animation5}}" bindtap="scrollRight">
+      <view class="item">
+        <view class="slide-image">
+          <image src="../../resources/classtest/tiger_3.png" mode="aspectFit" class=""/>
+        </view>
+        <view class="right">
+          <text class="title">学会与异性正确交往</text>
+          <text class="context">测一测，你已经成为一名“具有说服 力的专家”了吗？</text>
+        </view>
+        <image class='right_icon' src="../../resources/classtest/right.png" mode="widthFix" binderror="" bindload=""></image>
+      </view>
+    </view>
+  </view>
+</view>

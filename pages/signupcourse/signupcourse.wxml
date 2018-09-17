@@ -1,0 +1,17 @@
+<view class="container">
+  <image class="top_img" src="../../resources/bookclass/bookclass.png" mode="widthFix" binderror="" bindload=""></image>
+  
+  <view class="class_list">
+    <view class="item">
+      1.《学会战胜压力》
+    </view>
+
+    <view class="item">
+      2.《快速提高口头表达能力》
+    </view>
+
+     <view class="item">
+      3.《学会战胜压力》
+    </view>
+  </view>
+</view>

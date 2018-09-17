@@ -1,0 +1,70 @@
+.cantainer{
+  .share_card{
+    border-radius: 12rpx;
+    background-color: #fff;
+    width: 702rpx;
+    // height: 698rpx;
+    box-sizing: border-box;
+    margin: 24rpx auto;
+    border-radius: 12rpx;
+    .top_img{
+      width: 100%;
+      height: 422rpx;
+    }
+    .bottom{
+      display: flex;
+      justify-content: space-between;
+      padding: 32rpx 34rpx;
+      .left{
+        image{
+          border-radius: 50%;
+          height: 100rpx;
+          width: 100rpx;
+          border:1rpx solid #eee;
+          vertical-align: middle;
+          display: inline-block;
+          margin-right: 30rpx;
+        }
+        text{
+          font-size: 30rpx;
+          color: #666;
+          vertical-align: middle;
+          display: inline-block;
+        }
+      }
+      .right{
+        image{
+          width: 102rpx;
+        }
+      }
+    }
+  }
+
+  .share_btns{
+    margin-top: 96rpx;
+    .share_btn,.make_pic{
+      width: 504rpx;
+      height: 94rpx;
+      border-radius: 47rpx;
+      line-height: 94rpx;
+      color: #fff;
+      font-size: 36rpx;
+      margin-bottom: 20rpx;
+      text-align: center;
+      margin:0rpx auto 20rpx;
+    }
+    .share_btn{
+      background-color: #12BCF8;
+      .share_icon{
+        width: 46rpx;
+        display: inline-block;
+        line-height: 94rpx;
+        margin-right: 22rpx;
+        vertical-align: middle;
+      }
+    }
+    .make_pic{
+      background-color: #FFCC41;
+    }
+  }
+}
