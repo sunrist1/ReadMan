@@ -1,0 +1,41 @@
+/* pages/test/index.wxss */
+.bottom-bar {
+  width: 100vw;
+  height: 13vw;
+  position: fixed;
+  bottom: 0;
+  background-color: #12BCF8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-box {
+  width: 25vw;
+  height: 13vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-boxh {
+  width: 25vw;
+  height: 13vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0A7EC8;
+}
+
+.icon-square {
+  width: 6vw;
+  height: 6vw;
+}
+.text {
+  font-size: 2.8vw;
+}
+.red {
+  color: #FCA454;
+}

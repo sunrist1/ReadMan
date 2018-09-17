@@ -176,7 +176,7 @@ page {
   display: flex;
   justify-content: space-between;
   padding: 0 20rpx;
-  border-bottom: 1rpx solid #4781f8;
+  box-shadow:0px 5rpx 16rpx 0px rgba(71,129,248,0.26);
 }
 
 .tableftv {

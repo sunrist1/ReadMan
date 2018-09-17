@@ -1,85 +1,22 @@
 <!--pages/zhengshu/index.wxml-->
-<view class='titlev'>25个宝箱，共开启4个</view>
-<image src='/resources/certificate/backimg.png' class='backimg'></image>
+<view class='titlev' bindtap='godetail'>{{sumbox}}个宝箱，共开启{{openbox}}个</view>
+<image src='{{backimgurl}}' class='backimg'></image>
 
 <view class='contenv'>
-  <view class='box1'>
-    <image src='/resources/certificate/boxh.png' class='boxiconh'></image>
-  </view>
-  <view class='box2'>
-    <image src='/resources/certificate/box.png' class='boxicon'></image>
-  </view>
-  <view class='box3'>
-    <image src='/resources/certificate/box.png' class='boxicon'></image>
-  </view>
-  <view class='box4'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box5'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box6'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box7'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box8'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box9'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box10'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
 
+  <block wx:for="{{boxdata}}" wx:key="item" wx:for-index="x">
+    <view class='box{{x+1}}' wx:if="{{x%3==0}}">
+      <image src='/resources/certificate/boxh.png' class='boxiconh' wx:if="{{item.isopen}}"></image>
+      <image src='/resources/certificate/box.png' class='boxicon' wx:if="{{!item.isopen}}"></image>
+    </view>
+    <view class='box{{x+1}}' wx:if="{{x%3==1}}">
+      <image src='/resources/certificate/boxh.png' class='boxiconh' wx:if="{{item.isopen}}"></image>
+      <image src='/resources/certificate/box.png' class='boxicon' wx:if="{{!item.isopen}}"></image>
+    </view>
+    <view class='box{{x+1}}' wx:if="{{x%3==2}}">
+      <image src='/resources/certificate/boxh.png' class='boxiconh' wx:if="{{item.isopen}}"></image>
+      <image src='/resources/certificate/box.png' class='boxicon' wx:if="{{!item.isopen}}"></image>
+    </view>
+  </block>
 
-  <view class='box11'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box12'>
-    <image src='/resources/certificate/box.png' class='boxicon'></image>
-  </view>  
-  <view class='box13'>
-    <image src='/resources/certificate/box.png' class='boxicon'></image>
-  </view>  
-  <view class='box14'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box15'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box16'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box17'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box18'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box19'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box20'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-
-  <view class='box21'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box22'>
-    <image src='/resources/certificate/box.png' class='boxicon'></image>
-  </view>
-  <view class='box23'>
-    <image src='/resources/certificate/box.png' class='boxicon'></image>
-  </view>
-  <view class='box24'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  <view class='box25'>
-    <image src='/resources/certificate/boxh.png' class='boxicon'></image>
-  </view>
-  
 </view>

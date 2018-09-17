@@ -106,7 +106,7 @@
         text-align: center;
         margin-bottom: 88rpx; }
         .container .content .tags_list .item image {
-          width: 110rpx;
+          width: 90rpx;
           margin: 6rpx auto;
           display: inline-block; }
         .container .content .tags_list .item text {

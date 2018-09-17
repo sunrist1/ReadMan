@@ -2,7 +2,7 @@
 
 <!--结果图片-->
 <view class='imgresultv'>
-  <image src='/resources/mall/chargeresult.png' class='imgv'></image>
+  <image src='{{imgback}}' lazy-load='true' class='imgv'></image>
 </view>
 
 

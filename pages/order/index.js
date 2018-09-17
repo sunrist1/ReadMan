@@ -106,13 +106,18 @@ Page({
         orderstatus: 5
       },
     ],//订单列表
+    chkorderid: 0, //取消订单
+    showModalStatus: false, //弹窗部分
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that=this;
+    that.setData({
+      chktab:options.id
+    })
   },
   //切换tab
   chktabopt:function(e){
@@ -124,7 +129,102 @@ Page({
   //跳转到订单详情
   godetail:function(e){
     wx.navigateTo({
-      url: '../order/detail?id='+e.currentTarget.dataset.id
+      url: '../order/detail?id='+e.currentTarget.dataset.id+"&status="+e.currentTarget.dataset.status
+    })
+  },
+  //取消订单
+  cancelopt:function(e){
+    var that=this;
+
+    //参数部分
+    var chkorderid=e.currentTarget.dataset.id;
+    that.setData({
+      chkorderid: chkorderid
+    }) 
+    that.util("open");  
+  },
+  powerDrawer: function (e) {
+    var currentStatu = e.currentTarget.dataset.statu;
+    this.util(currentStatu)
+  },
+  util: function (currentStatu) {
+    /* 动画部分 */
+    // 第1步：创建动画实例 
+    var animation = wx.createAnimation({
+      duration: 200, //动画时长 
+      timingFunction: "linear", //线性 
+      delay: 0 //0则不延迟 
+    });
+
+    // 第2步：这个动画实例赋给当前的动画实例 
+    this.animation = animation;
+
+    // 第3步：执行第一组动画 
+    animation.opacity(0).rotateX(-100).step();
+
+    // 第4步：导出动画对象赋给数据对象储存 
+    this.setData({
+      animationData: animation.export()
+    })
+
+    // 第5步：设置定时器到指定时候后，执行第二组动画 
+    setTimeout(function () {
+      // 执行第二组动画 
+      animation.opacity(1).rotateX(0).step();
+      // 给数据对象储存的第一组动画，更替为执行完第二组动画的动画对象 
+      this.setData({
+        animationData: animation
+      })
+
+      //关闭 
+      if (currentStatu == "close") {
+        this.setData({
+          showModalStatus: false
+        });
+      }
+    }.bind(this), 200)
+    // 显示 
+    if (currentStatu == "open") {
+      this.setData({
+        showModalStatus: true
+      });
+    }
+  },
+  //确定按钮
+  okopt:function(){
+    var that=this;
+    var id=that.data.orderid;
+    that.util("close"); 
+  },
+  //支付
+  payforopt:function(e){
+    var that=this;
+    //参数部分
+    var id=e.currentTarget.dataset.id;
+    wx.showToast({
+      title: '支付成功',
+      duration:2000,
+      mask:true
+    })
+  },
+  //查看物流
+  viewwuliuopt: function (e) {
+    var that = this;
+    //参数部分
+    var id = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '../wuliu/index',
+    })
+  },
+  //确定收货
+  signopt:function(e){
+    var that = this;
+    //参数部分
+    var id = e.currentTarget.dataset.id;
+    wx.showToast({
+      title: '签收成功',
+      duration: 2000,
+      mask: true
     })
   },
   /**

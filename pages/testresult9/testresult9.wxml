@@ -36,15 +36,15 @@
     <text class="get_tags">获得标签</text>
     <view class="tags_list">
       <view class="item">
-        <image src="../../resources/testresult/flower_tag_1.png" mode="widthFix" binderror="" bindload=""></image>
+        <image src="../../resources/testresult/testresult9_tag_1.png" mode="widthFix" binderror="" bindload=""></image>
         <text>沉默的家伙</text>
       </view>
       <view class="item">
-        <image src="../../resources/testresult/flower_tag_2.png" mode="widthFix" binderror="" bindload=""></image>
+        <image src="../../resources/testresult/testresult9_tag_2.png" mode="widthFix" binderror="" bindload=""></image>
         <text>有想法不愿表达</text>
       </view>
       <view class="item">
-        <image src="../../resources/testresult/flower_tag_3.png" mode="widthFix" binderror="" bindload=""></image>
+        <image src="../../resources/testresult/testresult9_tag_3.png" mode="widthFix" binderror="" bindload=""></image>
         <text>缺乏集中力和动力</text>
       </view>
     </view>

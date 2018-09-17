@@ -1,10 +1,12 @@
 // pages/recharge/result.js
+var globalimgurl = getApp().globalData.globalimgurl;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    imgback:"",
     sumjifen:0,//总积分
   },
 
@@ -15,6 +17,9 @@ Page({
     var that=this;
     //获取总积分
     that.getJifen();
+    that.setData({
+      imgback: globalimgurl +"chognzhichenggong_chatu/chognzhichenggong_chatu@2x.png"
+    })
   },
   //获取总积分
   getJifen:function(){
@@ -26,8 +31,8 @@ Page({
   },
   //点击确定按钮
   gomall:function(){
-    wx.switchTab({
-      url: '../mall/index',
+    wx.navigateBack({
+      delta:2
     })
   },
   /**
