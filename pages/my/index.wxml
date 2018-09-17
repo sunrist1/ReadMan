@@ -1,6 +1,6 @@
 <!--pages/my/index.wxml-->
 
-<view class='myinfov' style="background-image:url('/resources/mycenter/mytopback.png');" bindtap='goeditmy'>
+<view class='myinfov' style="background-image:url('{{topbackimg}}');" bindtap='goeditmy'>
 
   <!--头像部分-->
   <view class='mytxv'>
@@ -52,7 +52,7 @@
 <!--订单部分-->
 <view class='threev'>
   <!--所有订单-->
-  <view class='threetopv' bindtap='goorder'>
+  <view class='threetopv' bindtap='goallorder'>
     <view class='myordertxt'>我的订单</view>
     <view class='myallorder'>全部订单</view>
   </view>
@@ -78,7 +78,7 @@
       <view class='ordertypenum' wx:if="{{signnum>0}}">{{signnum}}</view>
     </view>
     <!--退款后-->
-    <view class='ordertypeitem' bindtap='goorder' data-id='4'>
+    <view class='ordertypeitem' bindtap='gorefund'>
       <image src='/resources/mycenter/daifukuan.png' class='ordertypeicon'></image>
       <view class='ordertypetxt'>退款后</view>
       <view class='ordertypenum' wx:if="{{refundnum>0}}">{{refundnum}}</view>
@@ -142,5 +142,20 @@
   
 </view>
 
+<!--第六部分-->
+<view class='fivev'>
+  <!--意见反馈-->
+  <view class='tabv'  bindtap='gofeedback'>
+   <view class='tableftv'>
+    <image src='/resources/mycenter/feedback.png' class='tabuicon'></image>
+    <view class='tabtxt'>意见反馈</view>
+   </view>
+   <image src='/resources/mycenter/hright.png' class='tabright'></image>
+  </view>
+</view>
+
 <!--退出登录-->
 <view class='loginoutbtn' bindtap='loginout'>退出登录</view>
+<view style='width:100%;height:100rpx;'></view>
+<!--底部的tabbar-->
+<tabbar receiveData="3" />

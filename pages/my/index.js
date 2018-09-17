@@ -1,10 +1,12 @@
 // pages/my/index.js
+var globalimgurl = getApp().globalData.globalimgurl;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    topbackimg:"",//顶部背景图
     /******第一部分******/
     usertx:"http://s2.sinaimg.cn/mw690/001t9U6Czy6LCmGZvGNd1&690",//用户头像
     username:"代用名",//用户昵称
@@ -26,7 +28,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that=this;
 
+    that.setData({
+      topbackimg: globalimgurl +"wode_bg/wode_bg@2x.png"
+    })
   },
   //编辑用户信息
   goeditmy:function(){
@@ -43,13 +49,13 @@ Page({
   //标签
   gotitle: function () {
     wx.navigateTo({
-      url: '../zhengshu/index',
+      url: '../title/index',
     })
   },
   //积分
   gojifen: function () {
     wx.navigateTo({
-      url: '../zhengshu/index',
+      url: '../jifen/index',
     })
   },
   //全部订单
@@ -62,6 +68,12 @@ Page({
   goorder: function (e) {
     wx.navigateTo({
       url: '../order/index?id='+e.currentTarget.dataset.id,
+    })
+  },
+  //退款后
+  gorefund:function(){
+    wx.navigateTo({
+      url: '../tuikuan/index',
     })
   },
   //我的活动
@@ -92,6 +104,12 @@ Page({
   gorecord: function () {
     wx.navigateTo({
       url: '../record/index',
+    })
+  },
+  //意见
+  gofeedback: function () {
+    wx.navigateTo({
+      url: '../feedback/index',
     })
   },
   //退出登录

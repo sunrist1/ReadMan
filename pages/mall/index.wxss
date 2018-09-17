@@ -97,7 +97,7 @@ page {
 .kindv {
   width: 94%;
   background: #fff;
-  margin: 54rpx 3% 20rpx 3%;
+  margin: 54rpx 3% 120rpx 3%;
   border-radius: 12rpx;
 }
 
@@ -160,7 +160,7 @@ page {
 .shopcartv {
   position: fixed;
   left: 78.5%;
-  bottom: 50rpx;
+  bottom: 100rpx;
   width: 150rpx;
   height: 150rpx;
 }

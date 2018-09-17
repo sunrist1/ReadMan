@@ -39,6 +39,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    requesturl:"",//
+    globalimgurl:"http://dsr.majiangyun.cn/appimages/",//
   }
 })

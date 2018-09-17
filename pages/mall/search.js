@@ -93,7 +93,7 @@ Page({
   },
   //取消的点击
   goback:function(){
-    wx.switchTab({
+    wx.redirectTo({
       url: '../mall/index',
     })
   },

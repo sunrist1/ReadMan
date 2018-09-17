@@ -23,12 +23,16 @@
   font-weight: 500;
   color: #ccc;
   font-size: 28rpx;
+  height: 56rpx;
+  line-height: 56rpx;
 }
 
 .searchtxt {
   font-weight: 500;
   color: #333;
   font-size: 28rpx;
+  height: 56rpx;
+  line-height: 56rpx;
 }
 
 .searchrightv {

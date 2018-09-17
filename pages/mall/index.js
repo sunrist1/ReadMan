@@ -17,11 +17,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-     var that=this;
-     //初始化菜单
-     that.initMenu();
-     //初始化商品数据
-     that.initGoods();
+   
   },
   //初始化菜单
   initMenu: function () {
@@ -146,7 +142,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    var that = this;
+    //初始化菜单
+    that.initMenu();
+    //初始化商品数据
+    that.initGoods();
   },
 
   /**

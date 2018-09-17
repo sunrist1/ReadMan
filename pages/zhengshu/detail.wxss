@@ -56,3 +56,23 @@ page {
   font-size: 36rpx;
   margin-right: 75rpx;
 }
+
+/*底部的操作*/
+.bottomv{
+  display: flex;
+  justify-content: center;
+}
+.greydot{
+  width: 18rpx;
+  height: 18rpx;
+  border-radius: 9rpx;
+  background-color: #ccc;
+  margin-right: 52rpx;
+}
+.bluedot{
+  width: 18rpx;
+  height: 18rpx;
+  border-radius: 9rpx;
+  background-color: #12BCF8;
+  margin-right: 52rpx;
+}

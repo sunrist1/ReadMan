@@ -1,30 +1,40 @@
 {
   "pages": [
+    "pages/test/index",
+    "pages/index/index",
+    "pages/find/index",
+    "pages/mall/search",
+    "pages/my/index",
+    "pages/mall/index",
+    "pages/find/detail",
+    "pages/find/book",
+    "pages/find/result",
+    "pages/ticket/index",
     "pages/order/index",
     "pages/order/detail",
-    "pages/my/index",
+    "pages/tuikuan/index",
+    "pages/tuikuan/detail",
+    "pages/refund/index",
+    "pages/refund/result",
+    "pages/wuliu/index",
     "pages/zhengshu/index",
-    "pages/zhengshu/detail",
     "pages/title/index",
     "pages/jifen/index",
     "pages/activity/index",
-    "pages/ticket/index",
-    "pages/teacher/index",
     "pages/record/index",
+    "pages/teacher/index",
+    "pages/teacher/result",
     "pages/userinfo/index",
     "pages/userinfo/edit",
+    "pages/feedback/index",
     "pages/payfor/index",
     "pages/address/index",
     "pages/address/edit",
-    "pages/mall/index",
-    "pages/mall/search",
     "pages/recharge/index",
     "pages/recharge/result",
     "pages/goods/index",
     "pages/goods/detail",
     "pages/shopcart/index",
-    "pages/index/index",
-    "pages/find/index",
     "pages/logs/logs"
   ],
   "window": {
@@ -32,38 +42,6 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "读书人",
     "navigationBarTextStyle": "black"
-  },
-  "tabBar": {
-    "color": "#fff",
-    "selectedColor": "#fff",
-    "borderStyle": "black",
-    "backgroundColor": "#12BCF8",
-    "list": [
-      {
-        "selectedIconPath": "/resources/tabbar/home.png",
-        "iconPath": "/resources/tabbar/home.png",
-        "pagePath": "pages/index/index",
-        "text": "首页"
-      },
-      {
-        "selectedIconPath": "/resources/tabbar/find.png",
-        "iconPath": "/resources/tabbar/find.png",
-        "pagePath": "pages/find/index",
-        "text": "发现"
-      },
-      {
-        "selectedIconPath": "/resources/tabbar/shop.png",
-        "iconPath": "/resources/tabbar/shop.png",
-        "pagePath": "pages/mall/index",
-        "text": "积分商城"
-      },
-      {
-        "selectedIconPath": "/resources/tabbar/my.png",
-        "iconPath": "/resources/tabbar/my.png",
-        "pagePath": "pages/my/index",
-        "text": "我的"
-      }
-    ]
   },
   "networkTimeout": {
     "request": 10000,
